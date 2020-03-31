@@ -1,0 +1,4 @@
+[freeswitch]
+enabled = true
+logpath  = /opt/freeswitch/log/freeswitch.log
+logencoding=utf-8
