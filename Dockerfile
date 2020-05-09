@@ -11,4 +11,4 @@ RUN     bash bbb-install.sh -v xenial-220
 
 COPY    freeswitch.local /etc/fail2ban/jail.d/freeswitch.local
 
-EXPOSE  80 443
+EXPOSE  80 443 5090 5066 8888 5080 8021 1935 9999 5070 8081 8082 7443 3000
