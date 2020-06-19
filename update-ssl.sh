@@ -149,7 +149,7 @@ HERE
 
   # Update Greenlight (if installed) to use SSL
   if [ -f ~/greenlight/.env ]; then
-    BIGBLUEBUTTON_URL=$HOST/bigbluebutton/
+    BIGBLUEBUTTON_URL=https://$HOST/bigbluebutton/
     sed -i "s|.*BIGBLUEBUTTON_ENDPOINT=.*|BIGBLUEBUTTON_ENDPOINT=$BIGBLUEBUTTON_URL|" ~/greenlight/.env
     docker-compose -f ~/greenlight/docker-compose.yml down
     docker-compose -f ~/greenlight/docker-compose.yml up -d
