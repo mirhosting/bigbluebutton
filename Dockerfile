@@ -3,7 +3,7 @@ LABEL   maintainer="MIRhosting Devs"
 LABEL   version="0.5"
 
 RUN     apt-get update
-RUN     apt-get install wget lsb-release apt-utils net-tools sudo nano fail2ban software-properties-common aptdaemon openssh-server logrotate gawk iptables-persistent -y
+RUN     apt-get install wget lsb-release apt-utils net-tools sudo nano fail2ban software-properties-common aptdaemon openssh-server logrotate gawk -y
 
 RUN     wget https://github.com/bigbluebutton/bbb-install/raw/master/bbb-install.sh
 RUN     sed -i 's/3940/1024/g' bbb-install.sh
