@@ -7,7 +7,7 @@ RUN     apt-get install wget lsb-release apt-utils net-tools sudo nano fail2ban 
 
 RUN     wget https://github.com/bigbluebutton/bbb-install/raw/master/bbb-install.sh
 RUN     sed -i 's/3940/1024/g' bbb-install.sh
-RUN     bash bbb-install.sh -v xenial-22
+RUN     bash bbb-install.sh -v xenial-22; exit 0
 
 COPY    freeswitch.local /etc/fail2ban/jail.d/freeswitch.local
 COPY    install-greenlight.sh /root/install-greenlight.sh
